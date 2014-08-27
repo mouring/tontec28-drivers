@@ -1,0 +1,26 @@
+Accessing buttons:
+
+First thing go install http://wiringpi.com/ as that is the most useful tool
+to start with for this.  As we're going to discuss this in terms of command
+line.
+
+After that you need to know the four GPIOs for the four buttons.  They are listed from RIGHT to LEFT (yes backwards).
+
+GPIO-24 - Button 1 (K1)
+GPIO-23 - Button 2 (K2)
+GPIO-22 - Button 3 (K3)
+GPIO-21 - Button 4 (K4)
+
+To access them you need to first prepare them.  As an example I'll use 
+Button 1.  I'll be using the -g modifier in gpio as I like to use the GPIO
+numbers when possible.
+
+##  Set GPIO-24 pin as an input device
+$ gpio -g mode 24 in   
+
+## Set GPIO-24 "high" so that it is active
+$ gpio -g mode 24 up
+
+##  Loop forever reading GPIO-24.  If the button is not pressed it will
+## return "1".  If the button is pushed it will return "0".
+$ while true; do gpio -g read 24; done  
