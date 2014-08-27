@@ -1,0 +1,1 @@
+cmd_/home/pi/src/tontec28-drivers/ads7846/ads7846_device.ko := ld -EL -r  -T /usr/src/linux-headers-3.12-1-common/scripts/module-common.lds --build-id  -o /home/pi/src/tontec28-drivers/ads7846/ads7846_device.ko /home/pi/src/tontec28-drivers/ads7846/ads7846_device.o /home/pi/src/tontec28-drivers/ads7846/ads7846_device.mod.o

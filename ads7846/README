@@ -1,0 +1,6 @@
+This fork comes from two places.
+
+ads7846_device is from: https://github.com/notro/fbtft_tools/tree/master/ads7846_device
+ads7846.[ch] is from Linux -head
+
+Please refer to those locations for upstream patches.

@@ -1,0 +1,41 @@
+CPLD Chip: EPM3032
+
+Touch Screen Control Chip: XPT2046
+I2C Port EEPROM memory storage unit: AT24C02
+I2C Interface Chip (AT24C02)'s address is: 0xA0
+
+320*240, 16bit, 65K color
+2.8 inch resistive touch screen
+SPI display connection, with 125 Mhz top conversion rate
+SPI Touch screen connection, with 16 Mhz top conversion rate
+Integrated Power
+New design with 4 push buttons for user DIY programming
+
+
+Pin	Raspberry Pi  		-	MZT280-PI-EXT
+1   -	3V3 Power
+2   -	5V Power
+3   -	GPIO-0(IIC SDA)		-	AT24C02 SDA Data Pin
+4   -	5V Power
+5   -	GPIO-1(IIC SCL)		- 	AT24C02 SCL Clock Pin
+6   -	GND
+7   -	GPIO-4			- 	XPT2046 IRQ Interrupt
+8   -	GPIO-14
+9   -	GND
+10  -	GPIO-15			- 	LCD RST Display Reset
+11  -	GPIO-17			-	Infrared Data
+12  -	GPIO-18(PWM)		-	LCD PWM Brightness Control
+13  -	GPIO-21			- 	K4 Button 4
+14  -	GND
+15  -	GPIO-22			-	K3 Button 3
+16  -	GPIO-23			-	K2 Button 2
+17  -	3V3 Power
+18  -	GPIO-24			-	K1 Button 1
+19  -	GPIO-10 (SPI MOSI)	- 	LCD/TP MOSI
+20  -	GND
+21  -	GPIO-9 (SPI MISO)	-	LCD/TP MISO
+22  -	GPIO-25			-	LCD RS Display Choice
+23  -	GPIO-11 (SPI SCLK)	-	LCD/TP SCLK SPI Wire Bus Clock
+24  -	GPIO-8 (SPI CE0)	-	LCD CS Display Choice
+25  -	GND
+26  -	GPIO-7 (SPI CE1)	-	TP CS TouchScreen Choice
