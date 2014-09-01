@@ -421,7 +421,7 @@ uint8_t bcm2835_spi_transfer(uint8_t value){
 	bcm2835_peri_read_nb(fifo);
 
 	// Set TA = 0, and also set the barrier
-	//bcm2835_peri_set_bits(paddr, 0, BCM2835_SPI0_CS_TA);
+	bcm2835_peri_set_bits(paddr, 0, BCM2835_SPI0_CS_TA);
 
 	return 0;
 }
